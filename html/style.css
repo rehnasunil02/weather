@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image:url('C:\Users\rehna\Downloads\weather-api\html\image\background-39494.webp');
+  background: linear-gradient(to right, #3e91b7, #e8eef3); /* Very light blue to white gradient */
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #0a2431; /* Soft sky blue */
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  
+}
+
+form {
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #cce7f2;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background: #f7fafd; /* Very light blue */
+}
+
+input[type="text"]:focus {
+  border-color: #3a9ad9; /* Sky blue focus */
+}
+
+button {
+  background-color: #8cd3f8; /* Soft pastel blue */
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #6ab6e8; /* Darker pastel blue */
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Weather Display */
+.weather-display {
+  background: linear-gradient(to bottom right, #ffffff, #eaf7ff); /* Light gradient */
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-left: 250px;
+  margin-top:10px;
+}
+
+.weather-image {
+  max-height: 140px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3a9ad9;
+  margin-left: 180px;
+  margin-top:30px;
+}
+
+p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 5px 0;
+  margin-left: 230px;
+  margin-top:10px;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  color: #f77a52; /* Warm coral */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Icons Styling */
+.weather-icons {
+  font-size: 3rem;
+  color: #ffcc00; /* Soft yellow for icons */
+  margin-top: 10px;
+}
+
+#error-message {
+  color: #d9534f; /* Light red */
+  font-size: 1rem;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777777;
+}
+
+footer a {
+  color: #3a9ad9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #6ab6e8;
+}
+
+/* Hover Effects */
+.card:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    font-size: 2rem;
+  }
+
+  input[type="text"], button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
